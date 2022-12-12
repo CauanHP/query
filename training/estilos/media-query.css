@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    header {
+        display: none;
+    }
+
+    main h1::after {
+        color: blue;
+        content: ' Por CauanHP';
+    }
+
+    #credit::after {
+        color: blue;
+        content: ' Por CauanHP';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        color: rgb(0, 0, 0);
+        background-image: url(../imagens/wallpaper-5wylk5-822817-Preview.jpg);
+    }
+
+    header {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.897);
+        position: sticky;
+        top: 0px;
+        left: 0px;
+    }
+
+    h1 {
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+
+    #imagem {
+        height: 400px;
+    }
+ }
+
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/wallpaper-5wylk5-822817-Preview.jpg);
+    }
+
+    #imagem {
+        height: 400px;
+    }
+ }
+
+ @media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    header {
+        background-color: rgba(32, 32, 32, 0.637);
+    }
+
+    #imagem {
+        height: 600px;
+    }
+ }
